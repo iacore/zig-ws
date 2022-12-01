@@ -1,3 +1,6 @@
 [submodule "lib/zuri"]
 	path = lib/zuri
 	url = git@github.com:Vexu/zuri.git
+[submodule "lib/iguanaTLS"]
+	path = lib/iguanaTLS
+	url = git@github.com:nektro/iguanaTLS.git

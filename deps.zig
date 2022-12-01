@@ -6,8 +6,14 @@ pub const pkgs = struct {
         .source = .{ .path = "lib/zuri/src/zuri.zig" },
     };
 
+    pub const iguanaTLS = std.build.Pkg{
+        .name = "iguanaTLS",
+        .source = .{ .path = "lib/iguanaTLS/src/main.zig" },
+    };
+
     pub const all = [_]std.build.Pkg{
         pkgs.zuri,
+        iguanaTLS,
     };
 
     pub fn addAllTo(artifact: *std.build.LibExeObjStep) void {
